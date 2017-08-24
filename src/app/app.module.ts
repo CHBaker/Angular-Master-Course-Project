@@ -1,3 +1,6 @@
+import { TabsComponent } from './tabs/tabs/tabs.component';
+import { TabComponent } from './tabs/tab/tab.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
 import { ContactsEditorComponent } from './contacts-editor/contacts-editor.component';
 import { HttpClientModule } from '@angular/common/http'
 import { APP_ROUTES } from './app.routes';
@@ -12,14 +15,17 @@ import { FormsModule } from '@angular/forms';
 
 import { ContactsAppComponent } from './app.component';
 import { ContactsListComponent } from './contacts-list/contacts-list.component';
-import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-detail-view.component';
 
 @NgModule({
   declarations: [
       ContactsAppComponent,
       ContactsListComponent,
       ContactDetailComponent,
-      ContactsEditorComponent
+      ContactsEditorComponent,
+      ContactsDetailViewComponent,
+      TabComponent,
+      TabsComponent
     ],
   imports: [
     BrowserModule,

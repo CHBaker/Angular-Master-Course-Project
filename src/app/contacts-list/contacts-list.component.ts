@@ -36,8 +36,8 @@ export class ContactsListComponent implements OnInit{
 
         this.contactList$ = later$.merge(first$.takeUntil(later$));
 
-        // first$ --X--|---
-        // later$ -----X---
-        // rslts$ --X--X--
+        // first$   --X--|---
+        // later$   -----X---
+        // results$ --X--X--
     }
 }
